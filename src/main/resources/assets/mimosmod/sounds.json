@@ -1,0 +1,10 @@
+{
+  "encounter": {
+    "sounds": [
+      {
+        "name": "mimosmod:encounter",
+        "stream": true
+      }
+    ]
+  }
+}
