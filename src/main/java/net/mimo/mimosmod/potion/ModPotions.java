@@ -21,6 +21,7 @@ public class ModPotions {
     public static final RegistryObject<Potion> VULNERABLE_POTION = POTIONS.register("vulnerable_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.VULNERABILITY_EVENT.get(), 1600, 0)));
 
+
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }

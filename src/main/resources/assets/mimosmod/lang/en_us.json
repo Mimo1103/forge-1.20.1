@@ -40,6 +40,7 @@
   "tooltip.mimosmod.metal_detector.tooltip.shift": "§7Right click to search for Redstone Ore, Gold Ore, Lapis Ore and Azurite Ore§r",
   "tooltip.mimosmod.metal_detector.tooltip": "§7Press §8SHIFT§r for more information§r",
   "item.mimosmod.cucumber": "Cucumber",
+  "item.mimosmod.radioactive_stew": "Radioactive Stew",
   "item.mimosmod.calsifer": "Calsifer",
 
   "block.mimosmod.sound_block": "Sound Block",

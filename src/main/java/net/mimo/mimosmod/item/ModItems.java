@@ -77,6 +77,8 @@ public class ModItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
     public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CUCUMBER)));
+    public static final RegistryObject<Item> RADIOACTIVE_STEW = ITEMS.register("radioactive_stew",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RADIOACTIVE_STEW)));
 
     public static final RegistryObject<Item> CALSIFER = ITEMS.register("calsifer",
             () -> new FuelItem(new Item.Properties(), 2000)); //10 Items

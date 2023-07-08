@@ -104,6 +104,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.mimos_food_and_drinks"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.CUCUMBER.get());
+                        output.accept(ModItems.RADIOACTIVE_STEW.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_INGREDIENTS = CREATIVE_MODE_TABS.register("mimos_ingredients",

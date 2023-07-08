@@ -23,6 +23,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.MYSTELITE_HELMET.get())
+                .add(ModItems.MYSTELITE_CHESTPLATE.get())
+                .add(ModItems.MYSTELITE_LEGGINGS.get())
+                .add(ModItems.MYSTELITE_BOOTS.get());
+
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.GREENHEART_LOG.get().asItem())
                 .add(ModBlocks.GREENHEART_WOOD.get().asItem())
