@@ -29,9 +29,9 @@ public class CurseOfTricksterEnchantment extends Enchantment {
 
                 if (pLevel == 1) {
                     pTarget.setCustomName(pAttacker.getCustomName());
-                    pAttacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1, 3));
-                    pAttacker.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1, 1));
-                    pAttacker.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1));
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 2, 3));
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 1));
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 1));
                 }
             }
 
