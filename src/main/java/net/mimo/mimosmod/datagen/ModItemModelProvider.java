@@ -42,6 +42,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOULSTEEL);
         simpleItem(ModItems.SOULSTEEL_INGOT);
         simpleItem(ModItems.ENCOUNTER_MUSIC_DISC);
+        simpleItem(ModItems.MYSTELITE_HELMET);
+        simpleItem(ModItems.MYSTELITE_CHESTPLATE);
+        simpleItem(ModItems.MYSTELITE_LEGGINGS);
+        simpleItem(ModItems.MYSTELITE_BOOTS);
 
 
         handheldItem(ModItems.SOULSTEEL_AXE);

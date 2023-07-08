@@ -5,12 +5,17 @@ import net.mimo.mimosmod.block.custom.FuelItem;
 import net.mimo.mimosmod.item.custom.MetalDetectorItem;
 import net.mimo.mimosmod.item.custom.ScytheItem;
 import net.mimo.mimosmod.sound.ModSounds;
+import net.minecraft.Util;
 import net.minecraft.commands.CommandFunction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.EnumMap;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -78,6 +83,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> DAEDALUS_BOW = ITEMS.register("daedalus_bow",
             () -> new BowItem(new Item.Properties().durability(836)));
+
+
+    public static final RegistryObject<Item> MYSTELITE_HELMET = ITEMS.register("mystelite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.MYSTELITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> MYSTELITE_CHESTPLATE = ITEMS.register("mystelite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.MYSTELITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> MYSTELITE_LEGGINGS = ITEMS.register("mystelite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.MYSTELITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> MYSTELITE_BOOTS = ITEMS.register("mystelite_boots",
+            () -> new ArmorItem(ModArmorMaterials.MYSTELITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> ENCOUNTER_MUSIC_DISC = ITEMS.register("encounter_music_disc",
             () -> new RecordItem(4, ModSounds.ENCOUNTER, new Item.Properties().stacksTo(1), 1520)); //seconds * 20 = lengthInTicks

@@ -2,6 +2,8 @@ package net.mimo.mimosmod.enchantment;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -24,12 +26,12 @@ public class CurseOfTricksterEnchantment extends Enchantment {
             BlockPos targetPos = pTarget.blockPosition();
 
             if (pTarget.isCrouching()) {
-                pTarget.setCustomName(pAttacker.getCustomName());
-
 
                 if (pLevel == 1) {
                     pTarget.setCustomName(pAttacker.getCustomName());
-
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1, 3));
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1, 1));
+                    pAttacker.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1));
                 }
             }
 
