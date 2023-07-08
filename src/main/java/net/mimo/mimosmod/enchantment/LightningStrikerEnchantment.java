@@ -30,7 +30,7 @@ public class LightningStrikerEnchantment extends Enchantment {
             int value = (int) (Math.random() * (max -min)) + min;
 
 
-            if(value > 2) {
+            if(value > 7) {
                 if (pLevel == 1) {
                     EntityType.LIGHTNING_BOLT.spawn(level, (ItemStack) null, (Player) null, position, MobSpawnType.TRIGGERED, true, true);
                 }
