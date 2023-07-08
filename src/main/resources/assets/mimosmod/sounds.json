@@ -2,7 +2,7 @@
   "encounter": {
     "sounds": [
       {
-        "name": "mimosmod:encounter",
+        "name": "mimosmod:encounter_music_disc",
         "stream": true
       }
     ]

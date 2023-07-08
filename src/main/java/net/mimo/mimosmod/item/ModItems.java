@@ -79,7 +79,7 @@ public class ModItems {
     public static final RegistryObject<Item> DAEDALUS_BOW = ITEMS.register("daedalus_bow",
             () -> new BowItem(new Item.Properties().durability(836)));
 
-    public static final RegistryObject<Item> ENCOUNTER_RECORD = ITEMS.register("encounter_record",
+    public static final RegistryObject<Item> ENCOUNTER_MUSIC_DISC = ITEMS.register("encounter_music_disc",
             () -> new RecordItem(4, ModSounds.ENCOUNTER, new Item.Properties().stacksTo(1), 1520)); //seconds * 20 = lengthInTicks
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

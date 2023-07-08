@@ -81,7 +81,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOULSTEEL_PICKAXE.get());
                         output.accept(ModItems.SOULSTEEL_AXE.get());
                         output.accept(ModItems.SOULSTEEL_SHOVEL.get());
-                        output.accept(ModItems.ENCOUNTER_RECORD.get());
+                        output.accept(ModItems.ENCOUNTER_MUSIC_DISC.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_COMBAT = CREATIVE_MODE_TABS.register("mimos_combat",

@@ -33,7 +33,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GREENHEART_PLANKS.get().asItem());
 
         this.tag(ItemTags.MUSIC_DISCS)
-                .add(ModItems.ENCOUNTER_RECORD.get());
+                .add(ModItems.ENCOUNTER_MUSIC_DISC.get());
 
     }
 

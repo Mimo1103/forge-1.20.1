@@ -41,7 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.NECROSTONE_TWINE);
         simpleItem(ModItems.SOULSTEEL);
         simpleItem(ModItems.SOULSTEEL_INGOT);
-        simpleItem(ModItems.ENCOUNTER_RECORD);
+        simpleItem(ModItems.ENCOUNTER_MUSIC_DISC);
 
 
         handheldItem(ModItems.SOULSTEEL_AXE);
