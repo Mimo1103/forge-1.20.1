@@ -91,6 +91,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOULSTEEL_SWORD.get());
                         output.accept(ModItems.SOULSTEEL_AXE.get());
                         output.accept(ModItems.DIAMOND_SCYTHE.get());
+                        output.accept(ModItems.MYSTELITE_SCYTHE.get());
                         output.accept(ModItems.DAEDALUS_BOW.get());
                         output.accept(ModItems.MYSTELITE_HELMET.get());
                         output.accept(ModItems.MYSTELITE_CHESTPLATE.get());

@@ -51,6 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SOULSTEEL_SHOVEL);
         handheldItem(ModItems.SOULSTEEL_HOE);
         handheldItem(ModItems.DIAMOND_SCYTHE);
+        handheldItem(ModItems.MYSTELITE_SCYTHE);
 
         buttonItem(ModBlocks.GREENHEART_BUTTON, ModBlocks.GREENHEART_PLANKS);
         fenceItem(ModBlocks.GREENHEART_FENCE, ModBlocks.GREENHEART_PLANKS);

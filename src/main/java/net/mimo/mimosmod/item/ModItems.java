@@ -71,6 +71,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DIAMOND_SCYTHE = ITEMS.register("diamond_scythe",
             () -> new ScytheItem(Tiers.DIAMOND, 4 , -2.6f, new Item.Properties().durability(1561)));
+    public static final RegistryObject<Item> MYSTELITE_SCYTHE = ITEMS.register("mystelite_scythe",
+            () -> new ScytheItem(ModToolTiers.MYSTELITE, 5 , -2.6f, new Item.Properties().durability(2318)));
 
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
