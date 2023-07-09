@@ -25,6 +25,8 @@ public class CurseOfTricksterEnchantment extends Enchantment {
             BlockPos position = pAttacker.blockPosition();
             BlockPos targetPos = pTarget.blockPosition();
 
+            pAttacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1));
+
             if (pTarget.isCrouching()) {
 
                 if (pLevel == 1) {
