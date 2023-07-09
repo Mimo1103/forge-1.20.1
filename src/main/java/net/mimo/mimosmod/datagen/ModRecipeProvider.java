@@ -24,9 +24,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> AZURITE_SMELTABLES = List.of(ModItems.RAW_AZURITE.get(), ModBlocks.AZURITE_ORE.get(),
             ModBlocks.DEEPSLATE_AZURITE_ORE.get());
 
-    private static final List<ItemLike> GREENHEART_BURNABLES = List.of(ModBlocks.GREENHEART_LOG.get(), ModBlocks.GREENHEART_WOOD.get(),
-            ModBlocks.STRIPPED_GREENHEART_WOOD.get(), ModBlocks.STRIPPED_GREENHEART_LOG.get());
-
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -59,12 +56,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreBlasting(pWriter, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(),
                 0.25f, 100, "azurite");
-
-        oreSmelting(pWriter, GREENHEART_BURNABLES, RecipeCategory.MISC, ModItems.CALSIFER.get(),
-                0.25f, 200, "greenheart");
-
-        oreBlasting(pWriter, GREENHEART_BURNABLES, RecipeCategory.MISC, ModItems.CALSIFER.get(),
-                0.25f, 100, "greenheart");
 
 
     }
