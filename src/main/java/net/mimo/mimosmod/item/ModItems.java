@@ -98,6 +98,20 @@ public class ModItems {
     public static final RegistryObject<Item> MYSTELITE_BOOTS = ITEMS.register("mystelite_boots",
             () -> new ArmorItem(ModArmorMaterials.MYSTELITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RED_PARROT_FEATHER = ITEMS.register("red_parrot_feather",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GREEN_PARROT_FEATHER = ITEMS.register("green_parrot_feather",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_PARROT_FEATHER = ITEMS.register("blue_parrot_feather",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CYAN_PARROT_FEATHER = ITEMS.register("cyan_parrot_feather",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRAY_PARROT_FEATHER = ITEMS.register("gray_parrot_feather",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ENCOUNTER_MUSIC_DISC = ITEMS.register("encounter_music_disc",
             () -> new RecordItem(4, ModSounds.ENCOUNTER, new Item.Properties().stacksTo(1), 1520)); //seconds * 20 = lengthInTicks
     public static void register(IEventBus eventBus) {

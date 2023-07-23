@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREENHEART_SAPLING.get());
                         output.accept(ModBlocks.GREENHEART_LEAVES.get());
                         output.accept(ModBlocks.CHERRY_DELPHINIUM.get());
+                        output.accept(ModItems.CUCUMBER_SEEDS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_FUNCTIONAL_BLOCKS = CREATIVE_MODE_TABS.register("mimos_functional_blocks",
@@ -132,6 +133,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ARCANE_CRYSTAL.get());
                         output.accept(ModItems.NECROSTONE_TWINE.get());
                         output.accept(ModItems.CALSIFER.get());
+                        output.accept(ModItems.RED_PARROT_FEATHER.get());
+                        output.accept(ModItems.GREEN_PARROT_FEATHER.get());
+                        output.accept(ModItems.BLUE_PARROT_FEATHER.get());
+                        output.accept(ModItems.CYAN_PARROT_FEATHER.get());
+                        output.accept(ModItems.GRAY_PARROT_FEATHER.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_MOBS = CREATIVE_MODE_TABS.register("mimos_mobs",

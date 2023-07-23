@@ -7,6 +7,7 @@ import net.mimo.mimosmod.enchantment.ModEnchantments;
 import net.mimo.mimosmod.item.ModCreativeModeTabs;
 import net.mimo.mimosmod.item.ModItemProperties;
 import net.mimo.mimosmod.item.ModItems;
+import net.mimo.mimosmod.loot.ModLootModifiers;
 import net.mimo.mimosmod.potion.BetterBrewingRecipe;
 import net.mimo.mimosmod.potion.ModPotions;
 import net.mimo.mimosmod.sound.ModSounds;
@@ -50,6 +51,8 @@ public class MimosMod {
         ModEnchantments.register(modEventBus);
 
         ModSounds.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         ModEffects.register(modEventBus);
 

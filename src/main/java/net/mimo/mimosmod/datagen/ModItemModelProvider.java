@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AZURITE);
         simpleItem(ModItems.RAW_AZURITE);
         simpleItem(ModItems.CUCUMBER);
+        simpleItem(ModItems.CUCUMBER_SEEDS);
         simpleItem(ModItems.RADIOACTIVE_STEW);
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.CALSIFER);
@@ -43,6 +44,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOULSTEEL);
         simpleItem(ModItems.SOULSTEEL_INGOT);
         simpleItem(ModItems.ENCOUNTER_MUSIC_DISC);
+        simpleItem(ModItems.RED_PARROT_FEATHER);
+        simpleItem(ModItems.BLUE_PARROT_FEATHER);
+        simpleItem(ModItems.GREEN_PARROT_FEATHER);
+        simpleItem(ModItems.GRAY_PARROT_FEATHER);
+        simpleItem(ModItems.CYAN_PARROT_FEATHER);
 
 
         handheldItem(ModItems.SOULSTEEL_AXE);
