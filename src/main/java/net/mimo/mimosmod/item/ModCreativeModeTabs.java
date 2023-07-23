@@ -52,6 +52,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREENHEART_PLANKS.get());
                         output.accept(ModBlocks.GREENHEART_SAPLING.get());
                         output.accept(ModBlocks.GREENHEART_LEAVES.get());
+                        output.accept(ModBlocks.CHERRY_DELPHINIUM.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_FUNCTIONAL_BLOCKS = CREATIVE_MODE_TABS.register("mimos_functional_blocks",

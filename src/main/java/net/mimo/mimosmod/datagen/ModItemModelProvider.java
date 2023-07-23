@@ -57,6 +57,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.GREENHEART_FENCE, ModBlocks.GREENHEART_PLANKS);
 
         simpleBlockItem(ModBlocks.GREENHEART_DOOR);
+        simpleBlockItem(ModBlocks.CHERRY_DELPHINIUM);
 
 
         saplingItem(ModBlocks.GREENHEART_SAPLING);

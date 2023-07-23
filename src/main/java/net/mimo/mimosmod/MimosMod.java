@@ -14,6 +14,8 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
@@ -64,6 +66,8 @@ public class MimosMod {
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.ROTTEN_FLESH, ModPotions.INFECTION_POTION.get()));
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.CROCOITE.get(), ModPotions.RECOVER_POTION.get()));
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WEAKNESS, Items.BONE, ModPotions.VULNERABLE_POTION.get()));
+
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHERRY_DELPHINIUM.getId(), ModBlocks.POTTED_CHERRY_DELPHINIUM);
 
     }
 
