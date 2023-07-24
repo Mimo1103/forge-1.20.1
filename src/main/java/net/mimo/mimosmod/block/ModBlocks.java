@@ -138,10 +138,10 @@ public class ModBlocks {
             () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
-    public static final RegistryObject<Block> CHERRY_DELPHINIUM = registerBlock("cherry_delphinium",
+    public static final RegistryObject<Block> CHERRY_DAHLIA = registerBlock("cherry_dahlia",
             () -> new FlowerBlock(() -> MobEffects.SLOW_FALLING, 6 ,BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
-    public static final RegistryObject<Block> POTTED_CHERRY_DELPHINIUM = BLOCKS.register("potted_cherry_delphinium",
-            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CHERRY_DELPHINIUM,BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_CHERRY_DAHLIA = BLOCKS.register("potted_cherry_dahlia",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CHERRY_DAHLIA,BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

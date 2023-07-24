@@ -2,6 +2,6 @@
   "parent": "minecraft:block/flower_pot_cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "plant": "mimosmod:block/potted_cherry_delphinium"
+    "plant": "mimosmod:block/potted_cherry_dahlia"
   }
 }

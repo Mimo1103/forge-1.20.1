@@ -16,6 +16,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -66,11 +67,15 @@ public class MimosMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.CUCUMBER.get(), 0.65f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.CUCUMBER_SEEDS.get(), 0.30f);
+        });
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.ROTTEN_FLESH, ModPotions.INFECTION_POTION.get()));
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.CROCOITE.get(), ModPotions.RECOVER_POTION.get()));
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WEAKNESS, Items.BONE, ModPotions.VULNERABLE_POTION.get()));
 
-        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHERRY_DELPHINIUM.getId(), ModBlocks.POTTED_CHERRY_DELPHINIUM);
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHERRY_DAHLIA.getId(), ModBlocks.POTTED_CHERRY_DAHLIA);
 
     }
 

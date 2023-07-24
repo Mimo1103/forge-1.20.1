@@ -48,9 +48,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.GREENHEART_DOOR.get(),
                 block -> createDoorTable(ModBlocks.GREENHEART_DOOR.get()));
 
-        this.dropSelf(ModBlocks.CHERRY_DELPHINIUM.get());
-        this.add(ModBlocks.POTTED_CHERRY_DELPHINIUM.get(),
-                createPotFlowerItemTable(ModBlocks.POTTED_CHERRY_DELPHINIUM.get()));
+        this.dropSelf(ModBlocks.CHERRY_DAHLIA.get());
+        this.add(ModBlocks.POTTED_CHERRY_DAHLIA.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_CHERRY_DAHLIA.get()));
     }
 
     @Override

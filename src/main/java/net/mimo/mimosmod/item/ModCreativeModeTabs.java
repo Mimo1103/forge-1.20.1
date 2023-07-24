@@ -52,7 +52,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREENHEART_PLANKS.get());
                         output.accept(ModBlocks.GREENHEART_SAPLING.get());
                         output.accept(ModBlocks.GREENHEART_LEAVES.get());
-                        output.accept(ModBlocks.CHERRY_DELPHINIUM.get());
+                        output.accept(ModBlocks.CHERRY_DAHLIA.get());
                         output.accept(ModItems.CUCUMBER_SEEDS.get());
                     }).build());
 

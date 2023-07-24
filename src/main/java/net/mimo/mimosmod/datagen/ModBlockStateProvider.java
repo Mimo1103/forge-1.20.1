@@ -59,8 +59,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.GREENHEART_SAPLING);
         blockItem(ModBlocks.GREENHEART_TRAPDOOR, "_bottom");
 
-        simpleBlock(ModBlocks.CHERRY_DELPHINIUM.get(),
-                models().cross(blockTexture(ModBlocks.CHERRY_DELPHINIUM.get()).getPath(), blockTexture(ModBlocks.CHERRY_DELPHINIUM.get())).renderType("cutout"));
+        simpleBlock(ModBlocks.CHERRY_DAHLIA.get(),
+                models().cross(blockTexture(ModBlocks.CHERRY_DAHLIA.get()).getPath(), blockTexture(ModBlocks.CHERRY_DAHLIA.get())).renderType("cutout"));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

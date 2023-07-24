@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -63,7 +64,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.GREENHEART_FENCE, ModBlocks.GREENHEART_PLANKS);
 
         simpleBlockItem(ModBlocks.GREENHEART_DOOR);
-        simpleBlockItem(ModBlocks.CHERRY_DELPHINIUM);
+        simpleBlockItem(ModBlocks.CHERRY_DAHLIA);
 
 
         saplingItem(ModBlocks.GREENHEART_SAPLING);
