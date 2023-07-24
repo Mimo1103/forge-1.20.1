@@ -73,6 +73,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREENHEART_FENCE_GATE.get());
                         output.accept(ModBlocks.GREENHEART_DOOR.get());
                         output.accept(ModBlocks.GREENHEART_TRAPDOOR.get());
+                        output.accept(ModBlocks.COPPER_LAMP.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_TOOLS_AND_UTILITIES = CREATIVE_MODE_TABS.register("mimos_tools_and_utilities",

@@ -1,7 +1,7 @@
 {
   "item.mimosmod.azurite": "Azurite",
   "item.mimosmod.raw_azurite": "Raw Azurite",
-  "item.mimosmod.arcane crystal": "Arcane Crystal",
+  "item.mimosmod.arcane_crystal": "Arcane Crystal",
   "item.mimosmod.celestial_shard": "Celestial Shard",
   "item.mimosmod.celestial": "Celestial",
   "item.mimosmod.pianite": "Pianite",
@@ -117,5 +117,6 @@
   "item.mimosmod.green_parrot_feather": "Green Parrot Feather",
   "item.mimosmod.blue_parrot_feather": "Blue Parrot Feather",
   "item.mimosmod.cyan_parrot_feather": "Cyan Parrot Feather",
-  "item.mimosmod.gray_parrot_feather": "Gray Parrot Feather"
+  "item.mimosmod.gray_parrot_feather": "Gray Parrot Feather",
+  "block.mimosmod.copper_lamp": "Copper Lamp"
 }

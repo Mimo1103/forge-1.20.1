@@ -1,6 +1,7 @@
 package net.mimo.mimosmod.block;
 
 import net.mimo.mimosmod.MimosMod;
+import net.mimo.mimosmod.block.custom.CopperLampBlock;
 import net.mimo.mimosmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.mimo.mimosmod.block.custom.SoundBlock;
 import net.mimo.mimosmod.item.ModItems;
@@ -136,6 +137,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GREENHEART_SAPLING = registerBlock("greenheart_sapling",
             () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+    public static final RegistryObject<Block> COPPER_LAMP = registerBlock("copper_lamp",
+            () -> new CopperLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.COPPER)
+                    .lightLevel(state -> state.getValue(CopperLampBlock.CLICKED) ? 15 : 0)));
 
 
     public static final RegistryObject<Block> CHERRY_DAHLIA = registerBlock("cherry_dahlia",
