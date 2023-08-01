@@ -100,6 +100,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYSTELITE_CHESTPLATE.get());
                         output.accept(ModItems.MYSTELITE_LEGGINGS.get());
                         output.accept(ModItems.MYSTELITE_BOOTS.get());
+                        output.accept(ModItems.ICE_BOLT_RUNESTONE.get());
 
                     }).build());
 

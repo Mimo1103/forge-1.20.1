@@ -111,6 +111,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GRAY_PARROT_FEATHER = ITEMS.register("gray_parrot_feather",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ICE_BOLT_RUNESTONE = ITEMS.register("ice_bolt_runestone",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ENCOUNTER_MUSIC_DISC = ITEMS.register("encounter_music_disc",
             () -> new RecordItem(4, ModSounds.ENCOUNTER, new Item.Properties().stacksTo(1), 1520)); //seconds * 20 = lengthInTicks
