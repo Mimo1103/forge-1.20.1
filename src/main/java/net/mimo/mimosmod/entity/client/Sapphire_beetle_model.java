@@ -5,21 +5,24 @@ package net.mimo.mimosmod.entity.client;// Made with Blockbench 4.8.1
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
+import net.mimo.mimosmod.entity.animations.ModAnimationDefinitions;
+import net.mimo.mimosmod.entity.custom.SapphireBeetleEntity;
+import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.util.Mth;
 
-public class sapphire_beetle_model<T extends Entity> extends EntityModel<T> {
-	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
+public class Sapphire_beetle_model<T extends SapphireBeetleEntity> extends HierarchicalModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "sapphire_beetle"), "main");
-	private final ModelPart Animal;
+	private final ModelPart sapphire_beetle;
+	private final ModelPart head;
 
-	public sapphire_beetle_model(ModelPart root) {
-		this.Animal = root.getChild("Animal");
+	public Sapphire_beetle_model(ModelPart root) {
+		this.sapphire_beetle = root.getChild("Animal");
+		this.head = sapphire_beetle.getChild("Head");
 	}
 
 	public static LayerDefinition createBodyLayer() {
@@ -76,12 +79,29 @@ public class sapphire_beetle_model<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(SapphireBeetleEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.applyHeadRotation(entity, netHeadYaw, headPitch, ageInTicks);
+		this.animateWalk(ModAnimationDefinitions.SAPPHIRE_BEETLE_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.animate(entity.idleAnimationState, ModAnimationDefinitions.SAPPHIRE_BEETLE_IDLE, ageInTicks, 1f);
+	}
 
+	private void applyHeadRotation(SapphireBeetleEntity pEntity, float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
+		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
+		pHeadPitch = Mth.clamp(pHeadPitch, -25.0F, 45.0F);
+
+
+		this.head.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
+		this.head.xRot = pHeadPitch * ((float)Math.PI / 180F);
 	}
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		Animal.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		sapphire_beetle.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	}
+
+	@Override
+	public ModelPart root() {
+		return sapphire_beetle;
 	}
 }

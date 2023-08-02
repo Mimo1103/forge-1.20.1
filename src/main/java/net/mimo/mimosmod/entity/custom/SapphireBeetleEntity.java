@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.Nullable;
+import org.w3c.dom.Attr;
 
 public class SapphireBeetleEntity extends Animal {
 
@@ -36,6 +37,7 @@ public class SapphireBeetleEntity extends Animal {
     public static AttributeSupplier.Builder createAttribtutes() {
         return Animal.createLivingAttributes().add(Attributes.MAX_HEALTH, 350)
                 .add(Attributes.MOVEMENT_SPEED, 0.15D)
+                .add(Attributes.FOLLOW_RANGE, 16D)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.1f)
                 .add(Attributes.ATTACK_DAMAGE, 1f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.15f);

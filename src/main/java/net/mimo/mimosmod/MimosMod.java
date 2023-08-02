@@ -5,6 +5,7 @@ import net.mimo.mimosmod.block.ModBlocks;
 import net.mimo.mimosmod.effect.ModEffects;
 import net.mimo.mimosmod.enchantment.ModEnchantments;
 import net.mimo.mimosmod.entity.ModEntities;
+import net.mimo.mimosmod.entity.client.SapphireBeetleRenderer;
 import net.mimo.mimosmod.item.ModCreativeModeTabs;
 import net.mimo.mimosmod.item.ModItemProperties;
 import net.mimo.mimosmod.item.ModItems;
@@ -12,6 +13,8 @@ import net.mimo.mimosmod.loot.ModLootModifiers;
 import net.mimo.mimosmod.potion.BetterBrewingRecipe;
 import net.mimo.mimosmod.potion.ModPotions;
 import net.mimo.mimosmod.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
@@ -112,6 +115,7 @@ public class MimosMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
                 ModItemProperties.addCustomItemProperties();
+                EntityRenderers.register(ModEntities.SAPPHIRE_BEETLE.get(), SapphireBeetleRenderer::new);
             });
         }
     }

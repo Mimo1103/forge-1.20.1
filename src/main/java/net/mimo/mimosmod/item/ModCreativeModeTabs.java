@@ -143,11 +143,10 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_MOBS = CREATIVE_MODE_TABS.register("mimos_mobs",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AZURITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE_BEETLE_SPAWN_EGG.get()))
                     .title(Component.translatable("creativetab.mimos_mobs"))
                     .displayItems((displayParameters, output) -> {
-                        output.accept(ModItems.AZURITE.get());
-                        output.accept(ModItems.RAW_AZURITE.get());
+                        output.accept(ModItems.SAPPHIRE_BEETLE_SPAWN_EGG.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

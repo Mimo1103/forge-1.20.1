@@ -2,6 +2,7 @@ package net.mimo.mimosmod.item;
 
 import net.mimo.mimosmod.MimosMod;
 import net.mimo.mimosmod.block.custom.FuelItem;
+import net.mimo.mimosmod.entity.ModEntities;
 import net.mimo.mimosmod.item.custom.MetalDetectorItem;
 import net.mimo.mimosmod.item.custom.ScytheItem;
 import net.mimo.mimosmod.sound.ModSounds;
@@ -10,6 +11,7 @@ import net.minecraft.commands.CommandFunction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -113,6 +115,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ICE_BOLT_RUNESTONE = ITEMS.register("ice_bolt_runestone",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_BEETLE_SPAWN_EGG = ITEMS.register("sapphire_beetle_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SAPPHIRE_BEETLE, 0x59506c, 0x3f7ed0,
+                    new Item.Properties()));
 
     public static final RegistryObject<Item> ENCOUNTER_MUSIC_DISC = ITEMS.register("encounter_music_disc",
             () -> new RecordItem(4, ModSounds.ENCOUNTER, new Item.Properties().stacksTo(1), 1520)); //seconds * 20 = lengthInTicks

@@ -70,6 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.GREENHEART_SAPLING);
 
+        withExistingParent(ModItems.SAPPHIRE_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
