@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.mimo.mimosmod.block.ModBlocks;
 import net.mimo.mimosmod.effect.ModEffects;
 import net.mimo.mimosmod.enchantment.ModEnchantments;
+import net.mimo.mimosmod.entity.ModEntities;
 import net.mimo.mimosmod.item.ModCreativeModeTabs;
 import net.mimo.mimosmod.item.ModItemProperties;
 import net.mimo.mimosmod.item.ModItems;
@@ -58,6 +59,8 @@ public class MimosMod {
         ModEffects.register(modEventBus);
 
         ModPotions.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
