@@ -27,7 +27,7 @@ public class SapphireBeetleRenderer extends MobRenderer<SapphireBeetleEntity, Sa
     public void render(SapphireBeetleEntity pEntity, float pEntityYaw, float pPartialTicks,
                        PoseStack pMatrixStack, MultiBufferSource pBuffer, int pPackedLight) {
         if(pEntity.isBaby()) {
-            pMatrixStack.scale(0.4f, 0.4f, 0.4f);
+            pMatrixStack.scale(0.5f, 0.5f, 0.5f);
         }
         super.render(pEntity, pEntityYaw, pPartialTicks, pMatrixStack, pBuffer, pPackedLight);
     }

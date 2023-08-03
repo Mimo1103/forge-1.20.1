@@ -84,6 +84,7 @@ public class Sapphire_beetle_model<T extends SapphireBeetleEntity> extends Hiera
 		this.applyHeadRotation(entity, netHeadYaw, headPitch, ageInTicks);
 		this.animateWalk(ModAnimationDefinitions.SAPPHIRE_BEETLE_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
 		this.animate(entity.idleAnimationState, ModAnimationDefinitions.SAPPHIRE_BEETLE_IDLE, ageInTicks, 1f);
+		this.animate(entity.attackAnimationState, ModAnimationDefinitions.SAPPHIRE_BEETLE_ATTACK, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(SapphireBeetleEntity pEntity, float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
