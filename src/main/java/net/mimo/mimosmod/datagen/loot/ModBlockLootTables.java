@@ -53,6 +53,35 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createPotFlowerItemTable(ModBlocks.POTTED_CHERRY_DAHLIA.get()));
 
         this.dropSelf(ModBlocks.COPPER_LAMP.get());
+
+        this.add(ModBlocks.STARDUST_ORE.get(),
+                block -> createOreDrop(ModBlocks.STARDUST_ORE.get(), ModItems.STARDUST.get()));
+        this.add(ModBlocks.DEEPSLATE_STARDUST_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_STARDUST_ORE.get(), ModItems.STARDUST.get()));
+        this.add(ModBlocks.LUMITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.LUMITE_ORE.get(), ModItems.LUMITE_SHARD.get()));
+        this.add(ModBlocks.CELESTIAL_ORE.get(),
+                block -> createOreDrop(ModBlocks.CELESTIAL_ORE.get(), ModItems.CELESTIAL_SHARD.get()));
+        this.add(ModBlocks.PIANITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.PIANITE_ORE.get(), ModItems.PIANITE.get()));
+        this.add(ModBlocks.CROCOITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.CROCOITE_ORE.get(), ModItems.CROCOITE.get()));
+        this.add(ModBlocks.NECROSTONE_ORE.get(),
+                block -> createOreDrop(ModBlocks.NECROSTONE_ORE.get(), ModItems.NECROSTONE_TWINE.get()));
+        this.add(ModBlocks.SOULSTEEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.SOULSTEEL_ORE.get(), ModItems.SOULSTEEL.get()));
+        this.add(ModBlocks.INFERNIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.INFERNIUM_ORE.get(), ModItems.INFERNIUM.get()));
+        this.add(ModBlocks.INFERNITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.INFERNITE_ORE.get(), ModItems.INFERNITE.get()));
+        this.add(ModBlocks.EMBERCORE_ORE.get(),
+                block -> createOreDrop(ModBlocks.EMBERCORE_ORE.get(), ModItems.EMBERCORE.get()));
+        this.add(ModBlocks.ARCANE_CRYSTAL_ORE.get(),
+                block -> createOreDrop(ModBlocks.ARCANE_CRYSTAL_ORE.get(), ModItems.ARCANE_CRYSTAL.get()));
+        this.add(ModBlocks.MYSTELITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.MYSTELITE_ORE.get(), ModItems.MYSTELITE.get()));
+        this.add(ModBlocks.VOIDSTONE_AMETHYST_ORE.get(),
+                block -> createOreDrop(ModBlocks.VOIDSTONE_AMETHYST_ORE.get(), ModItems.VOIDSTONE_AMETHYST.get()));
     }
 
     @Override

@@ -120,5 +120,21 @@
   "item.mimosmod.gray_parrot_feather": "Gray Parrot Feather",
   "block.mimosmod.copper_lamp": "Copper Lamp",
   "item.mimosmod.ice_bolt_runestone": "Ice Bolt Runestone",
-  "item.mimosmod.sapphire_beetle_spawn_egg": "Sapphire Beetle Spawn Egg"
+  "item.mimosmod.sapphire_beetle_spawn_egg": "Sapphire Beetle Spawn Egg",
+  "block.mimosmod.stardust_ore": "Stardust Ore",
+  "block.mimosmod.deepslate_stardust_ore": "Deepslate Stardust Ore",
+  "block.mimosmod.lumite_ore": "Lumite Ore",
+  "block.mimosmod.celestial_ore": "Celestial Ore",
+  "block.mimosmod.pianite_ore": "Pianite Ore",
+  "block.mimosmod.crocoite_ore": "Crocoite Ore",
+  "block.mimosmod.soulsteel_ore": "Soulsteel Ore",
+  "block.mimosmod.necrostone_ore": "Necrostone Ore",
+  "block.mimosmod.infernite_ore": "Infernite Ore",
+  "block.mimosmod.infernium_ore": "Infernium Ore",
+  "block.mimosmod.embercore_ore": "Embercore Ore",
+  "block.mimosmod.mystelite_ore": "Mystelite Ore",
+  "block.mimosmod.arcane_crystal_ore": "Arcane Crystal Ore",
+  "block.mimosmod.voidstone_amethyst_ore": "Voidstone Amethyst Ore"
+
+
 }

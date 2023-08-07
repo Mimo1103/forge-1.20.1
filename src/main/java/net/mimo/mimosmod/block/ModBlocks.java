@@ -47,10 +47,66 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> AZURITE_ORE = registerBlock("azurite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(4f, 5.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+                    .strength(3f, 3f).requiresCorrectToolForDrops(), UniformInt.of(0, 2)));
     public static final RegistryObject<Block> DEEPSLATE_AZURITE_ORE = registerBlock("deepslate_azurite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
-                    .strength(4f, 6f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+                    .strength(4.5f, 3f).requiresCorrectToolForDrops(), UniformInt.of(1, 3)));
+
+    public static final RegistryObject<Block> STARDUST_ORE = registerBlock("stardust_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(4f, 4.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
+
+    public static final RegistryObject<Block> DEEPSLATE_STARDUST_ORE = registerBlock("deepslate_stardust_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(4.5f, 5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+
+    public static final RegistryObject<Block> LUMITE_ORE = registerBlock("lumite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(4.5f, 3.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> PIANITE_ORE = registerBlock("pianite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(5.5f, 6f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
+
+    public static final RegistryObject<Block> CELESTIAL_ORE = registerBlock("celestial_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(5f, 5.5f).requiresCorrectToolForDrops(), UniformInt.of(4, 7)));
+
+    public static final RegistryObject<Block> CROCOITE_ORE = registerBlock("crocoite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3f, 3.5f).requiresCorrectToolForDrops(), UniformInt.of(1, 3)));
+
+    public static final RegistryObject<Block> SOULSTEEL_ORE = registerBlock("soulsteel_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(4f, 3.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> NECROSTONE_ORE = registerBlock("necrostone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3.5f, 3f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+
+    public static final RegistryObject<Block> INFERNITE_ORE = registerBlock("infernite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3f, 3f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> INFERNIUM_ORE = registerBlock("infernium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3.5f, 3.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> EMBERCORE_ORE = registerBlock("embercore_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE)
+                    .strength(7f, 9f).requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
+
+    public static final RegistryObject<Block> ARCANE_CRYSTAL_ORE = registerBlock("arcane_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(4f, 10f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> MYSTELITE_ORE = registerBlock("mystelite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(5f, 11f).requiresCorrectToolForDrops(), UniformInt.of(4, 6)));
+
+    public static final RegistryObject<Block> VOIDSTONE_AMETHYST_ORE = registerBlock("voidstone_amethyst_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(3.5f, 9.5f).requiresCorrectToolForDrops(), UniformInt.of(3, 5)));
 
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",

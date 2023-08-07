@@ -27,6 +27,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SOUND_BLOCK);
         blockWithItem(ModBlocks.CROCOITE_BLOCK);
         blockWithItem(ModBlocks.AZURITE_ORE);
+        blockWithItem(ModBlocks.STARDUST_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_STARDUST_ORE);
+        blockWithItem(ModBlocks.LUMITE_ORE);
+        blockWithItem(ModBlocks.PIANITE_ORE);
+        blockWithItem(ModBlocks.CELESTIAL_ORE);
+        blockWithItem(ModBlocks.CROCOITE_ORE);
+        blockWithItem(ModBlocks.NECROSTONE_ORE);
+        blockWithItem(ModBlocks.SOULSTEEL_ORE);
+        blockWithItem(ModBlocks.INFERNITE_ORE);
+        blockWithItem(ModBlocks.INFERNIUM_ORE);
+        blockWithItem(ModBlocks.EMBERCORE_ORE);
+        blockWithItem(ModBlocks.ARCANE_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.MYSTELITE_ORE);
+        blockWithItem(ModBlocks.VOIDSTONE_AMETHYST_ORE);
+
+
         blockWithItem(ModBlocks.DEEPSLATE_AZURITE_ORE);
         blockWithItem(ModBlocks.GREENHEART_PLANKS);
 

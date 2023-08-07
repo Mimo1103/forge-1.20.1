@@ -38,6 +38,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.AZURITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_AZURITE_ORE.get())
+                .add(ModBlocks.CROCOITE_ORE.get())
+                .add(ModBlocks.STARDUST_ORE.get())
+                .add(ModBlocks.DEEPSLATE_STARDUST_ORE.get())
+                .add(ModBlocks.LUMITE_ORE.get())
+                .add(ModBlocks.CELESTIAL_ORE.get())
+                .add(ModBlocks.PIANITE_ORE.get())
+                .add(ModBlocks.NECROSTONE_ORE.get())
+                .add(ModBlocks.SOULSTEEL_ORE.get())
+                .add(ModBlocks.INFERNIUM_ORE.get())
+                .add(ModBlocks.INFERNITE_ORE.get())
+                .add(ModBlocks.EMBERCORE_ORE.get())
+                .add(ModBlocks.VOIDSTONE_AMETHYST_ORE.get())
+                .add(ModBlocks.ARCANE_CRYSTAL_ORE.get())
+                .add(ModBlocks.MYSTELITE_ORE.get())
                 .add(ModBlocks.AZURITE_BLOCK.get())
                 .add(ModBlocks.RAW_AZURITE_BLOCK.get())
                 .add(ModBlocks.CROCOITE_BLOCK.get())
@@ -57,10 +71,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_AZURITE_ORE.get())
+                .add(ModBlocks.CROCOITE_ORE.get())
                 .add(ModBlocks.CROCOITE_BLOCK.get())
-                .add(ModBlocks.SOUND_BLOCK.get());
+                .add(ModBlocks.SOUND_BLOCK.get())
+                .add(ModBlocks.NECROSTONE_ORE.get())
+                .add(ModBlocks.SOULSTEEL_ORE.get())
+                .add(ModBlocks.INFERNIUM_ORE.get())
+                .add(ModBlocks.INFERNITE_ORE.get())
+                .add(ModBlocks.LUMITE_ORE.get());
 
-        //this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.EMBERCORE_ORE.get())
+                .add(ModBlocks.VOIDSTONE_AMETHYST_ORE.get())
+                .add(ModBlocks.CELESTIAL_ORE.get());
+
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.GREENHEART_LOG.get())

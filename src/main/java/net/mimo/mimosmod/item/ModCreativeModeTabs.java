@@ -54,6 +54,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREENHEART_LEAVES.get());
                         output.accept(ModBlocks.CHERRY_DAHLIA.get());
                         output.accept(ModItems.CUCUMBER_SEEDS.get());
+                        output.accept(ModBlocks.AZURITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_AZURITE_ORE.get());
+                        output.accept(ModBlocks.STARDUST_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_STARDUST_ORE.get());
+                        output.accept(ModBlocks.LUMITE_ORE.get());
+                        output.accept(ModBlocks.CELESTIAL_ORE.get());
+                        output.accept(ModBlocks.PIANITE_ORE.get());
+                        output.accept(ModBlocks.CROCOITE_ORE.get());
+                        output.accept(ModBlocks.SOULSTEEL_ORE.get());
+                        output.accept(ModBlocks.NECROSTONE_ORE.get());
+                        output.accept(ModBlocks.INFERNITE_ORE.get());
+                        output.accept(ModBlocks.INFERNIUM_ORE.get());
+                        output.accept(ModBlocks.EMBERCORE_ORE.get());
+                        output.accept(ModBlocks.MYSTELITE_ORE.get());
+                        output.accept(ModBlocks.ARCANE_CRYSTAL_ORE.get());
+                        output.accept(ModBlocks.VOIDSTONE_AMETHYST_ORE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MIMOS_FUNCTIONAL_BLOCKS = CREATIVE_MODE_TABS.register("mimos_functional_blocks",
