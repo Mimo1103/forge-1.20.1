@@ -10,6 +10,7 @@ import net.mimo.mimosmod.item.ModCreativeModeTabs;
 import net.mimo.mimosmod.item.ModItemProperties;
 import net.mimo.mimosmod.item.ModItems;
 import net.mimo.mimosmod.loot.ModLootModifiers;
+import net.mimo.mimosmod.painting.ModPaintings;
 import net.mimo.mimosmod.potion.BetterBrewingRecipe;
 import net.mimo.mimosmod.potion.ModPotions;
 import net.mimo.mimosmod.sound.ModSounds;
@@ -64,6 +65,7 @@ public class MimosMod {
         ModPotions.register(modEventBus);
 
         ModEntities.register(modEventBus);
+        ModPaintings.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

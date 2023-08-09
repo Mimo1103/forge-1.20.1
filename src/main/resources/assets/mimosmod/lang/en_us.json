@@ -93,15 +93,15 @@
   "item.minecraft.tipped_arrow.effect.vulnerable_potion": "Arrow of Vulnerability",
 
 
-  "creativetab.mimos_building_blocks": "Mimo's Building Blocks",
-  "creativetab.mimos_natural_blocks": "Mimo's Natural Blocks",
-  "creativetab.mimos_functional_blocks": "Mimo's Functional Blocks",
-  "creativetab.mimos_redstone_blocks": "Mimo's Redstone Blocks",
-  "creativetab.mimos_tools_and_utilities": "Mimo's Tools & Utilities",
-  "creativetab.mimos_combat": "Mimo's Combat",
-  "creativetab.mimos_food_and_drinks": "Mimo's Food & Drinks",
-  "creativetab.mimos_ingredients": "Mimo's Ingredients",
-  "creativetab.mimos_mobs": "Mimo's Mobs",
+  "creativetab.mimos_building_blocks": "Mim0_'s Building Blocks",
+  "creativetab.mimos_natural_blocks": "Mim0_'s Natural Blocks",
+  "creativetab.mimos_functional_blocks": "Mim0_'s Functional Blocks",
+  "creativetab.mimos_redstone_blocks": "Mim0_'s Redstone Blocks",
+  "creativetab.mimos_tools_and_utilities": "Mim0_'s Tools & Utilities",
+  "creativetab.mimos_combat": "Mim0_'s Combat",
+  "creativetab.mimos_food_and_drinks": "Mim0_'s Food & Drinks",
+  "creativetab.mimos_ingredients": "Mim0_'s Ingredients",
+  "creativetab.mimos_mobs": "Mim0_'s Mobs",
 
 
 
@@ -134,7 +134,10 @@
   "block.mimosmod.embercore_ore": "Embercore Ore",
   "block.mimosmod.mystelite_ore": "Mystelite Ore",
   "block.mimosmod.arcane_crystal_ore": "Arcane Crystal Ore",
-  "block.mimosmod.voidstone_amethyst_ore": "Voidstone Amethyst Ore"
+  "block.mimosmod.voidstone_amethyst_ore": "Voidstone Amethyst Ore",
+
+  "painting.mimosmod.portal_key.title": "Portal Key",
+  "painting.mimosmod.portal_key.author": "Mim0_"
 
 
 }
