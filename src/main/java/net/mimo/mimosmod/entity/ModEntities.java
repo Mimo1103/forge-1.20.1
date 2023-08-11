@@ -1,6 +1,7 @@
 package net.mimo.mimosmod.entity;
 
 import net.mimo.mimosmod.MimosMod;
+import net.mimo.mimosmod.entity.custom.IceBoltProjectileEntity;
 import net.mimo.mimosmod.entity.custom.SapphireBeetleEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,6 +18,13 @@ public class ModEntities {
     public static final RegistryObject<EntityType<SapphireBeetleEntity>> SAPPHIRE_BEETLE =
             ENTITY_TYPES.register("sapphire_beetle", () -> EntityType.Builder.of(SapphireBeetleEntity::new, MobCategory.CREATURE)
                     .sized(0.5f, 0.5f).build("sapphire_beetle"));
+    public static final RegistryObject<EntityType<IceBoltProjectileEntity>> ICE_BOLT_PROJECTILE =
+            ENTITY_TYPES.register("ice_bolt_projectile",
+                    () -> EntityType.Builder.<IceBoltProjectileEntity>of(IceBoltProjectileEntity::new, MobCategory.MISC)
+                            .sized(0.5f, 0.5f)
+                            .clientTrackingRange(4)
+                            .updateInterval(20)
+                            .build("ice_bolt_projectile"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

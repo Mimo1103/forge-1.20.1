@@ -3,6 +3,7 @@ package net.mimo.mimosmod.item;
 import net.mimo.mimosmod.MimosMod;
 import net.mimo.mimosmod.block.custom.FuelItem;
 import net.mimo.mimosmod.entity.ModEntities;
+import net.mimo.mimosmod.item.custom.IceBoltRunestoneItem;
 import net.mimo.mimosmod.item.custom.MetalDetectorItem;
 import net.mimo.mimosmod.item.custom.ScytheItem;
 import net.mimo.mimosmod.sound.ModSounds;
@@ -114,7 +115,7 @@ public class ModItems {
     public static final RegistryObject<Item> GRAY_PARROT_FEATHER = ITEMS.register("gray_parrot_feather",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ICE_BOLT_RUNESTONE = ITEMS.register("ice_bolt_runestone",
-            () -> new Item(new Item.Properties()));
+            () -> new IceBoltRunestoneItem(new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_BEETLE_SPAWN_EGG = ITEMS.register("sapphire_beetle_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.SAPPHIRE_BEETLE, 0x59506c, 0x3f7ed0,

@@ -2,6 +2,7 @@ package net.mimo.mimosmod.event;
 
 import net.mimo.mimosmod.MimosMod;
 import net.mimo.mimosmod.entity.ModEntities;
+import net.mimo.mimosmod.entity.client.IceBoltProjectileModel;
 import net.mimo.mimosmod.entity.client.Sapphire_beetle_model;
 import net.mimo.mimosmod.entity.custom.SapphireBeetleEntity;
 import net.mimo.mimosmod.entity.layers.ModModelLayers;
@@ -15,6 +16,7 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.SAPPHIRE_BEETLE_LAYER, Sapphire_beetle_model::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.ICE_BOLT_PROJECTILE_LAYER, IceBoltProjectileModel::createBodyLayer);
     }
 
     @SubscribeEvent

@@ -5,6 +5,7 @@ import net.mimo.mimosmod.block.ModBlocks;
 import net.mimo.mimosmod.effect.ModEffects;
 import net.mimo.mimosmod.enchantment.ModEnchantments;
 import net.mimo.mimosmod.entity.ModEntities;
+import net.mimo.mimosmod.entity.client.IceBoltProjectileRenderer;
 import net.mimo.mimosmod.entity.client.SapphireBeetleRenderer;
 import net.mimo.mimosmod.item.ModCreativeModeTabs;
 import net.mimo.mimosmod.item.ModItemProperties;
@@ -118,6 +119,7 @@ public class MimosMod {
             event.enqueueWork(() -> {
                 ModItemProperties.addCustomItemProperties();
                 EntityRenderers.register(ModEntities.SAPPHIRE_BEETLE.get(), SapphireBeetleRenderer::new);
+                EntityRenderers.register(ModEntities.ICE_BOLT_PROJECTILE.get(), IceBoltProjectileRenderer::new);
             });
         }
     }
